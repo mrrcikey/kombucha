@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kombucha Natural</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('https://cdn.wallpapersafari.com/87/39/Iphsj1.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.4);
+      width: 100%;
+      min-height: 100vh;
+      color: white;
+    }
+
+    header {
+      background-color: rgba(255, 255, 255, 0.048);
+      color: white;
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2em; /* Reduzido mais */
+      font-family: 'Playfair Display', serif;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1em; /* Reduzido mais */
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin: 30px 0 30px 40px;
+      padding: 20px;
+      max-width: 600px;
+      background: none;
+      box-shadow: none;
+      border-radius: 0;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+      font-size: 1.5em; /* Reduzido mais */
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 10px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      margin: 30px;
+      flex-wrap: wrap;
+    }
+
+    .social-links {
+      width: 45%;
+      font-size: 1em; /* Reduzido mais */
+    }
+
+    .social-links a {
+      display: block;
+      color: white;
+      margin: 15px 0;
+      text-decoration: none;
+    }
+
+    .social-links a:hover {
+      text-decoration: underline;
+    }
+
+    .social-links input {
+      width: 100%;
+      padding: 8px;
+      font-size: 0.95em; /* Reduzido mais */
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+    }
+
+    .signup-form {
+      width: 45%;
+      font-size: 1em; /* Reduzido mais */
+    }
+
+    .signup-form label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .signup-form input {
+      width: 90%;
+      padding: 8px;
+      font-size: 1em; /* Reduzido mais */
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+    }
+
+    .signup-form button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 18px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em; /* Reduzido mais */
+      cursor: pointer;
+    }
+
+    .signup-form button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <header>
+      <h1>CONTATO</h1>
+      <nav>
+        <ul>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="beneficios.html">Benefícios</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <!-- Redes sociais à esquerda -->
+      <div class="social-links">
+        <h2>Redes Sociais</h2>
+        <label for="instagram">Instagram:</label>
+        <input type="text" id="instagram" name="instagram" placeholder="@vitalin">
+
+        <label for="whatsapp">WhatsApp:</label>
+        <input type="text" id="whatsapp" name="whatsapp" placeholder="+55 51 93605-2528">
+
+        <label for="facebook">Facebook:</label>
+        <input type="text" id="facebook" name="facebook" placeholder="vitalinofc">
+      </div>
+
+      <!-- Formulário de cadastro à direita -->
+      <div class="signup-form">
+        <h2>Cadastre-se</h2>
+        <form action="enviar-cadastro.php" method="POST">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required>
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required>
+
+          <button type="submit">Cadastrar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

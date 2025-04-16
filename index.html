@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kombucha Natural</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://cdn.wallpapersafari.com/87/39/Iphsj1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #333;
+  font-size: 0.6em; /* Diminui o tamanho da fonte geral */
+}
+
+/* Outras partes do código permanecem iguais, como no HTML anterior */
+
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url('https://cdn.wallpapersafari.com/87/39/Iphsj1.jpg') center/cover no-repeat;
+      filter: blur(0.5px);
+      z-index: -1;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.4); /* Escurece o fundo */
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      background-color: rgb(224, 222, 217);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      border-radius: 12px;
+      margin: 40px 0 40px 60px;
+      padding: 40px 20px;
+      max-width: 800px;
+      font-size: 1.4em;
+    }
+
+    h1, h2 {
+      font-family: 'Playfair Display', serif;
+    }
+
+    h2 {
+      color: #000;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: rgba(115, 209, 60, 0.9);
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 40px;
+    }
+
+    .botao {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: inline-block;
+    }
+
+    .botao:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Boas-vindas piscando com cores suaves */
+.boas-vindas {
+  animation: piscarColorido 2s infinite alternate;
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5em; /* Tamanho do texto */
+  color: #33ff00; /* Cor inicial */
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8); /* Sombras para dar mais destaque */
+}
+
+@keyframes piscarColorido {
+  0% {
+    opacity: 1;
+    color: #33ff00; /* Cor inicial (verde suave) */
+  }
+  50% {
+    opacity: 0.5;
+    color: #d3ee3d; /* Cor intermediária (amarelo suave) */
+  }
+  100% {
+    opacity: 1;
+    color: #00ffd5; /* Volta para a cor inicial */
+  }
+}
+
+    
+
+    .lado-direito {
+      background-color: rgb(224, 222, 217);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      border-radius: 12px;
+      padding: 40px 20px;
+      max-width: 400px;
+      font-size: 1.2em;
+      width: 30%;
+      position: absolute;
+      top: 430px;
+      right: 60px;
+      z-index: 1;
+    }
+
+    .lado-direito ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+
+    .lado-direito h2 {
+      font-family: 'Playfair Display', serif;
+      color: #000;
+      margin-bottom: 20px;
+    }
+
+    .texto-canto {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-size: 1.2em;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      background-color: rgba(0, 0, 0, 0.103);
+      padding: 5px 10px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>KOMBUCHA</h1>
+    <nav>
+      <ul>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="beneficios.html">Benefícios</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="boas-vindas">
+    <p>BOAS-VINDAS</p>
+  </div>
+
+  <section id="sobre a Kombucha">
+    <h2>O que é Kombucha?</h2>
+    <p>A kombucha é uma bebida fermentada feita a partir do chá adoçado. Ela é rica em probióticos e muito consumida por quem busca uma vida saudável.</p>
+    <a href="sobre.html" class="botao">Saiba mais</a>
+  </section>
+
+  <section id="beneficios">
+    <h2>Como a Kombucha é feita?</h2>
+    <p>A produção da kombucha começa com chá adoçado, que é fermentado com um SCOBY. Esse processo dura de 7 a 10 dias e gera uma bebida levemente ácida, gaseificada e cheia de probióticos naturais.</p>
+    <a href="beneficios.html" class="botao">Saiba mais</a>
+  </section>
+
+  <section id="contato">
+    <h2>Sabores Naturais</h2>
+    <p>A kombucha pode ser feita com vários sabores: frutas como morango, limão, manga ou especiarias como gengibre e hibisco. Cada sabor traz uma experiência diferente!</p>
+    <a href="contato.html" class="botao">Saiba mais</a>
+  </section>
+
+  <section class="lado-direito">
+    <h2>Por que escolher Kombucha?</h2>
+    <p>A Kombucha oferece uma alternativa saudável a refrigerantes e sucos processados. Com o seu sabor único e propriedades probióticas, ela é excelente para a digestão e o sistema imunológico.</p>
+    <ul>
+      <li>Melhora a digestão</li>
+      <li>Aumenta a imunidade</li>
+      <li>Desintoxica o corpo</li>
+      <li>Ajuda na saúde mental</li>
+    </ul>
+    <a href="sobre.html" class="botao">Saiba mais</a>
+  </section>
+
+  <div class="texto-canto">Juliane Dias e Yuri Derzet</div>
+</body>
+</html>

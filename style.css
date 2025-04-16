@@ -1,0 +1,235 @@
+/* Fonte principal e fundo geral */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://cdn.wallpapersafari.com/87/39/Iphsj1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #333;
+}
+
+/* Efeito de fundo escurecido com blur (se quiser usar uma imagem personalizada, troque o URL) */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url('https://cdn.wallpapersafari.com/87/39/Iphsj1.jpg') center/cover no-repeat;
+  filter: blur(0.5px);
+  z-index: -1;
+}
+
+/* Cabeçalho */
+header {
+  background-color: rgba(60, 201, 72, 0.9); /* verde com transparência */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Navegação */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Seções do site */
+section {
+  background-color: rgb(224, 222, 217); /* fundo claro */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  margin: 40px 0 40px 60px;
+  padding: 40px 20px;
+  max-width: 800px;
+  font-size: 1.4em;
+}
+
+/* Títulos */
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+h2 {
+  color: #000;
+}
+
+/* Lista */
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Rodapé */
+footer {
+  background-color: rgba(115, 209, 60, 0.9);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 40px;
+}
+
+/* Botões */
+.botao {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: inline-block;
+}
+
+.botao:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Boas-vindas centralizada */
+.boas-vindas {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.8em;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8); /* Deixa o texto mais visível no fundo */
+}
+
+/* Nova seção à direita */
+.lado-direito {
+  background-color: rgb(224, 222, 217);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  padding: 40px 20px;
+  max-width: 400px;
+  font-size: 1.2em;
+  width: 30%;
+  position: absolute;
+  top: 430px; /* mais pra cima */
+  right: 60px; /* mais afastado da borda direita */
+  z-index: 1;
+}
+
+.lado-direito ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.lado-direito h2 {
+  font-family: 'Playfair Display', serif;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.lado-direito .botao {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+
+/* Parte 1 (Alterada) */
+header {
+  background-color: rgba(255, 255, 255, 0.048); /* verde com transparência */
+  color: white;
+  padding: 50px 0; /* Mais espaço ao redor do conteúdo */
+  text-align: center;
+  position: relative;
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://example.com/sua-imagem.jpg'); /* Substitua pela sua imagem */
+  background-size: cover;
+  background-position: center;
+  filter: brightness(50%);
+  z-index: -1;
+}
+
+header h1 {
+  font-size: 3em;
+  font-family: 'Playfair Display', serif;
+  animation: fadeIn 2s ease-in-out;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-top: 20px;
+  font-weight: bold;
+  animation: fadeIn 2.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes piscar {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.boas-vindas {
+  animation: piscar 1s infinite;
+}
+
+.boas-vindas {
+  animation: piscar 1s infinite;
+  font-family: 'Playfair Display', serif; /* ou outra fonte que você quiser */
+  font-size: 3.5em; /* aumenta o tamanho do texto */
+  color: #33ff00; /* amarelo bem chamativo */
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+.texto-canto {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 1.2em;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  background-color: rgba(0, 0, 0, 0.103); /* fundo escuro com transparência */
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
